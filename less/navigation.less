@@ -1,1 +1,59 @@
 // Navigation code here
+
+nav{
+   background: @wild-sand;
+   border:1px solid @sea-shell;
+   position: sticky;
+   top: 0;
+   opacity: 20%;
+   @media @phone{
+       opacity: 100%;
+   }
+   transition: all 0.5s ease-in-out;
+   &:hover{
+       opacity:100%;
+   }
+   //Nav bar styling - I want it to be 100% width
+}
+
+.navContainer{
+    
+    .flex(space-between,center,wrap);
+    flex-direction: column;
+    padding: 1% 0;
+    //Nav container styling
+
+    .logo{
+        margin: 0 auto 3% auto;
+        font-size: 3.5rem;
+        font-weight: 800;
+    }//Self explanatory
+    
+    .navList{
+        .flex(space-between,center,wrap);
+        width: 60%;
+        //Nav element container styling
+
+        .navElement{
+            a{
+                font-size: 2rem;
+                text-decoration: none;
+                color: @river-bend;
+            }
+        }//Nav element styling
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
