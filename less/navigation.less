@@ -3,6 +3,16 @@
 nav{
    background: @wild-sand;
    border:1px solid @sea-shell;
+   position: sticky;
+   top: 0;
+   opacity: 20%;
+   @media @phone{
+       opacity: 100%;
+   }
+   transition: all 0.5s ease-in-out;
+   &:hover{
+       opacity:100%;
+   }
    //Nav bar styling - I want it to be 100% width
 }
 

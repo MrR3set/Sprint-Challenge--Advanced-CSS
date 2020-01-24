@@ -164,6 +164,18 @@ p {
 nav {
   background: #F6F6F6;
   border: 1px solid #F1F1F1;
+  position: sticky;
+  top: 0;
+  opacity: 20%;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 500px) {
+  nav {
+    opacity: 100%;
+  }
+}
+nav:hover {
+  opacity: 100%;
 }
 .navContainer {
   display: flex;
